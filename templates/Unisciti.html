@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Studiamo!</title>
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css" >
+</head>
+<body>
+
+<!--Navigation Bar start -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light py-3 py-lg-0">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="Home"><h1 class="m-0">StudyTogheter</h1></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="navbar-nav mx-auto py-0">
+
+                    </div>
+
+        <a href="logout" class="nav-item nav-link navbar-nav btn rounded-pill ml-0 d-lg-block"><button type="button" class="btn btn-primary">Logout</button></a>
+    </div>
+  </div>
+</nav>
+<!--Navigation Bar End -->
+
+<hr/>
+
+<ul class="nav justify-content-center nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link" href="Studiamo">I miei gruppi</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" href="Unisciti">Unisciti ad un gruppo</a>
+  </li>
+</ul>
+
+{% for item in esame %}
+
+<div class="card container py-5 px-lg-5">
+  <div class="card-body">
+      <div class="d-flex justify-content-between">
+         <h2>{{item['Nome_esame']}}</h2>
+        <a href="/Unisci/{{item['Nome_esame']}}" class="btn rounded-pill py-2 px-4 ms-3 d-none d-lg-block"><button type="button" class="btn btn-primary">Unisciti al gruppo</button></a>
+      </div>
+  </div>
+</div>
+{% endfor %}
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="/static/js/bootstrap.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="it">
+<head>
+
+
+  <title>Login</title>
+
+<link rel="stylesheet" href="/static/css/bootstrap.min.css" >
+
+</head>
+<div>
+
+<!--Navigation Bar start -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light py-3 py-lg-0">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="Home"><h1 class="m-0">StudyTogheter</h1></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="navbar-nav mx-auto py-0">
+                        <a href="Home" class="nav-item nav-link active">Home</a>
+                        <a href="Chi Siamo" class="nav-item nav-link">Chi Siamo</a>
+                        <a href="Servizi" class="nav-item nav-link">Servizi</a>
+                        <a href="Contatti" class="nav-item nav-link">Contatti</a>
+                    </div>
+                    <a href="Login" class="nav-item nav-link navbar-nav btn rounded-pill ml-0 d-lg-block"><button type="button" class="btn btn-primary">Studiamo!</button></a>
+
+    </div>
+
+  </div>
+</nav>
+<!--Navigation Bar End -->
+
+<div class="card container py-5 px-5 mt-5">
+    <div class="row justify-content-center mb-5">
+        <div class="col-lg-7">
+                <ul class="nav nav-pills nav-fill mb-5">
+                    <li class="nav-item">
+                    <a class="nav-link active" href="Login">Login</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="Registrazione">Registrazione</a>
+                    </li>
+                </ul>
+                <form action="" method="post">
+
+                  <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="text" name="Username" class="form-control" id="InputEmail"  placeholder="Inserisci Username">
+                             <label for="InputEmail">Username</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                         <div class="form-floating">
+                                <input type="password" name="password" class="form-control" id="InputPassword" placeholder="Password">
+                                <label for="InputPassword">Password</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-primary w-100 py-3" type="submit">Login</button>
+                        </div>
+                   </div>
+                </form>
+        </div>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="/static/js/bootstrap.js"></script>
+
+</body>
+</html>

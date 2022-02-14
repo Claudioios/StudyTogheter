@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <!-- CSS only -->
+<link rel="stylesheet" href="/static/css/bootstrap.min.css" >
+
+<style>
+    .post-content {
+    top:50%;
+        left: 50%;
+        transform:translate(-50%,-50%);
+
+    position: absolute;
+}
+    .bottonegiù {
+    top:100%;
+        left: 50%;
+        transform:translate(-50%,-50%);
+
+    position: absolute;
+}
+
+.thumbnail{
+    position:relative;
+
+}
+
+.titolo {
+  font-size: 13vw;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow:   0vw -0.54vw 0 #212121,
+                 0vw -0.54vw 0 #212121,
+                 0vw  0.54vw 0 #212121,
+                 0vw  0.54vw 0 #212121,
+                -0.54vw  0vw 0 #212121,
+                 0.54vw  0vw 0 #212121,
+                -0.54vw  0vw 0 #212121,
+                 0.54vw  0vw 0 #212121,
+                -0.54vw -0.54vw 0 #212121,
+                 0.54vw -0.54vw 0 #212121,
+                -0.54vw  0.54vw 0 #212121,
+                 0.54vw  0.54vw 0 #212121,
+                -0.54vw  1.62vw 0 #212121,
+                 0px  1.62vw 0 #212121,
+                 0.54vw  1.62vw 0 #212121,
+                 0 1.71vw 0.09px rgba(0,0,0,.1),
+                 0 0vw 0.54vw rgba(0,0,0,.1),
+                 0 0.54vw 0.27vw rgba(0,0,0,.3),
+                 0 1.08vw 0.54vw rgba(0,0,0,.2),
+                 0 1.62vw 1.62vw rgba(0,0,0,.25),
+                 0 2.16vw 2.16vw rgba(0,0,0,.2),
+                 0 2.7vw 2.7vw rgba(0,0,0,.15);
+}
+.subtitolo {
+  font-size: 2vw;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow:   0px -2px 0 #212121,
+                 0px -2px 0 #212121,
+                 0px  2px 0 #212121,
+                 0px  2px 0 #212121,
+                -2px  0px 0 #212121,
+                 2px  0px 0 #212121,
+                -2px  0px 0 #212121,
+                 2px  0px 0 #212121,
+                -2px -2px 0 #212121,
+                 2px -2px 0 #212121,
+                -2px  2px 0 #212121,
+                 2px  2px 0 #212121,
+                -2px  4px 0 #212121,
+                 0px  4px 0 #212121,
+                 2px  4px 0 #212121,
+                 0 6px 1px rgba(0,0,0,.1),
+                 0 0 2px rgba(0,0,0,.1),
+                 0 2px 1px rgba(0,0,0,.3),
+                 0 4px 2px rgba(0,0,0,.2),
+                 0 6px 6px rgba(0,0,0,.25),
+                 0 8px 8px rgba(0,0,0,.2),
+                 0 12px 12px rgba(0,0,0,.15);
+}
+</style>
+
+</head>
+<body>
+<!--Navigation Bar start -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light py-3 py-lg-0 d-flex">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="Home"><h1 class="m-0">StudyTogheter</h1></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="navbar-nav mx-auto py-0">
+                        <a href="Home" class="nav-item nav-link active">Home</a>
+                        <a href="Chi Siamo" class="nav-item nav-link">Chi Siamo</a>
+                        <a href="Servizi" class="nav-item nav-link">Servizi</a>
+                        <a href="Contatti" class="nav-item nav-link">Contatti</a>
+                    </div>
+
+        <a href="Login" class="nav-item nav-link navbar-nav btn rounded-pill ml-0 d-lg-block"><button type="button" class="btn btn-primary">Studiamo!</button></a>
+
+    </div>
+
+
+
+  </div>
+</nav>
+<!--Navigation Bar End -->
+
+ <!-- Immagine Start -->
+<div class="container-fluid no-padding thumbnail">
+    <img src="/static/Immagini/fotohome.jpeg" class="img-fluid w-100" alt="">
+        <div class="post-content">
+            <h1 class="text-center display-1 titolo mb-5">StudyTogheter</h1>
+            <p class="text-center subtitolo mb-5">"Non frequentare in presenza non sarà più un limite!"</p>
+
+            <a href="Login" class="btn rounded-pill py-2 px-4 ms-3 d-none d-lg-block"><button type="button" class="btn btn-primary">Studiamo!</button></a>
+        </div>
+</div>
+ <!-- Immagine End -->
+
+ <!-- Cos'è Start -->
+
+
+              <div class="container-fluid mb-5 px-lg-5">
+                  <hr/>
+                    <h1 class="text-center">Cos'è StudyTogheter</h1>
+                  <hr class="mb-5"/>
+                  <p class="text-center">StudyTogheter è una WebApp pensata soprattutto per le persone che non hanno
+                  modo di frequentare le lezioni in presenza. Ha lo scopo di aiutare gli studenti universitari proponendo
+                  vari servizi di estrema utilità. Permette di mettere in contatto studenti che preparano gli stessi esami
+                  o che necessitano di ricevere materiale didattico.</p>
+                </div>
+ <!-- Cos'è End -->
+
+        <!-- Cosa offre Start -->
+
+              <div class="container-fluid px-lg-5">
+                  <hr/>
+                    <h1 class="text-center">Cosa offre StudyTogheter</h1>
+                  <hr/>
+              </div>
+        <div class="container-xxl">
+            <div class="container-fluid py-5 px-lg-5">
+                <div class="row g-4">
+                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                        <img class="card-img-top img-fluid" src="/static/Immagini/Gruppi.jpg" alt="Card image cap" style="height: 280px">
+                        <div class="feature-item bg-light rounded text-center p-4">
+                            <i class="fa fa-3x fa-mail-bulk text-primary mb-4"></i>
+                            <h5 class="mb-3">Gruppi di studio</h5>
+                            <p class="m-0">Unisciti a gruppi di studio per preparare un esame o per confrontarti con
+                            altri studenti di tutto il mondo.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                        <img class="card-img-top img-fluid" src="/static/Immagini/Scambi.jpg" alt="Card image cap" style="height: 280px">
+                        <div class="feature-item bg-light rounded text-center p-4">
+                            <i class="fa fa-3x fa-search text-primary mb-4"></i>
+                            <h5 class="mb-3">Scambio materiale</h5>
+                            <p class="m-0">Scambia appunti, slide, spiegazioni e informazioni generali con ogni studente che
+                            necessita di un aiuto.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                        <img class="card-img-top img-fluid" src="/static/Immagini/Incontri.jpg" alt="Card image cap" style="height: 280px">
+                        <div class="feature-item bg-light rounded text-center p-4">
+                            <i class="fa fa-3x fa-laptop-code text-primary mb-4"></i>
+                            <h5 class="mb-3">Creazione incontri</h5>
+                            <p class="m-0">Incontra anche nel mondo reale le persone che stanno preparando il tuo stesso esame
+                                partecipando a delle sessioni di studio.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <a href="Servizi" class="btn rounded-pill d-none d-lg-block"><button type="button" class="btn btn-primary">Servizi</button></a>
+<!-- Cosa offre End -->
+
+ <!-- Chi c'è Start -->
+
+<div class="container-fluid py-5 px-lg-5">
+    <hr/>
+        <h1 class="text-center">Chi c'è dietro StudyTogheter</h1>
+    <hr/>
+</div>
+
+<div class="container-fluid d-flex justify-content-center">
+    <div class="row mb-5 px-lg-5">
+        <div class="col-md-6 col-xs-6 text-right d-flex justify-content-center">
+            <img src="/static/Immagini/foto.jpeg" style="height: 340px; width: 280px" class="img-fluid"/>
+        </div>
+
+        <div class="col-md-6 col-xs-6 d-flex flex-column justify-content-center px-5">
+          <h1 class="text-center">Claudio Silvestri</h1>
+          <p class="m-auto px-5">Claudio Silvestri è uno studente iscritto all'università Parthenope di Napoli.
+              Frequenta il corso di informatica e nel 2021 ha progettato la WebApp "Study Togheter" il cui motto è:
+          "NON FREQUENTARE IN PRESENZA NON SARA' PIU' UN LIMITE!"</p>
+            <div class="d-flex justify-content-center">
+                <a href="Chi Siamo" class="btn rounded-pill py-2 d-none d-lg-block"><button type="button" class="btn btn-primary">Per saperne di più</button></a>
+            </div>
+
+        </div>
+   </div>
+</div>
+
+ <!-- Chi c'è End -->
+
+ <!-- Contattaci Start -->
+
+              <div class="container-fluid mb-5 px-lg-5">
+                  <hr/>
+                    <h1 class="text-center">Hai bisogno di aiuto?</h1>
+                  <hr class="mb-5" />
+                  <h4 class="text-center mb-5">Scrivici per qualsiasi problema, saremo felici di aiutarti!</h4>
+                  <a href="Contatti" class="btn rounded-pill py-2 px-4 ms-3 d-none d-lg-block"><button type="button" class="btn btn-primary">Contattaci</button></a>
+
+                </div>
+
+ <!-- Contattaci End -->
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-light text-black footer wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-4">
+                        <p class="section-title text-black h5 mb-4">Quick Link<span></span></p>
+                        <a class="btn btn-link" href="Servizi">Servizi</a><br>
+                        <a class="btn btn-link" href="Chi Siamo">Chi Siamo</a><br>
+                        <a class="btn btn-link" href="Contatti">Contattaci</a><br>
+                        <a class="btn btn-link" href="Studiamo">Studiamo!</a><br>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <p class="section-title text-black h5 mb-4">Studente<span></span></p>
+                        <p>Silvestri Claudio</p>
+                        <p>Matricola: 0124002061</p>
+                        <p>Mail: claudio.silvestri001@studenti.uniparthenope.it</p>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <p class="section-title text-black h5 mb-4">Social<span></span></p>
+                        <a class="btn btn-link" href="">Facebook</a><br>
+                        <a class="btn btn-link" href="">Instagram</a><br>
+                        <a class="btn btn-link" href="">Twitter</a><br>
+                        <a class="btn btn-link" href="">Discord</a><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="/static/js/bootstrap.js"></script>
+</body>
+</html>
