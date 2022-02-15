@@ -1,23 +1,23 @@
-Entrare nella cartella contenente i files scaricati da GitHUB e creare un virtual environment per Python:
+Enter the folder containing the files downloaded from GitHub and create a virtual environment for Python:
 
 python3 -m venv venv
 
-attivare il virtual environment:
+activate the virtual environment:
 
 source venv/bin/activate
 
-installare Flask:
+install Flask:
 
 pip install Flask
 
-installare le librerie richieste:
+install the required libraries:
 
 pip install -r requirements.txt
 
-avviare Flask e far partire il web-server:
+start Flask and start the web server:
 
 flask run --host 0.0.0.0
 
-per farlo partire solo su localhost:
+to run it only on localhost:
 
 flask run
