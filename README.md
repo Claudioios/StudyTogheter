@@ -1,13 +1,23 @@
-Entrare nella cartella StudyTogheter e creare un virtual environment per Python
+Entrare nella cartella contenente i files scaricati da GitHUB e creare un virtual environment per Python:
 
 python3 -m venv venv
 
-attivato il virtual environment installare le librerie richieste -r requirements.txt
+attivare il virtual environment:
 
-Entrare nella cartella Flask e far partire il web-server
+source venv/bin/activate
+
+installare Flask:
+
+pip install Flask
+
+installare le librerie richieste:
+
+pip install -r requirements.txt
+
+avviare Flask e far partire il web-server:
 
 flask run --host 0.0.0.0
 
-per farlo partire solo su localhost
+per farlo partire solo su localhost:
 
 flask run
